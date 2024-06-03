@@ -1,10 +1,13 @@
 <script>
+import CardAuto from './CardAuto.vue';
+import InfoCar from './InfoCar.vue';
 import store from '../data/store.js';
 
 
 export default {
     components: {
-
+        CardAuto,
+        InfoCar,
     },
 
     data() {
@@ -30,6 +33,11 @@ export default {
 </script>
 
 <template>
+
+    <CardAuto />
+
+    <InfoCar />
+
 
 </template>
 

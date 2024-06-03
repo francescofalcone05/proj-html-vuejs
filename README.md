@@ -9,7 +9,7 @@ Utilizziamo Bootstrap e FontAwesome: FontAwesome: <script src="https://kit.fonta
 Componenti: PageHeader: Navbar (Dihep)
 
 PageMain: Carosello, Search-Car( Luca)
-          Card-auto, Info-Car (Francesco)
+          CardAuto, InfoCar (Francesco)
           Customer e Recent (Davide)
 
 PageFooter: Footer (Dihep)
