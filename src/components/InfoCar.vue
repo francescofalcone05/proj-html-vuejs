@@ -38,7 +38,7 @@ export default {
 
         <div class="row justify-content-center">
 
-            <div class="col-4 p-3 bk-point position-relative">
+            <div class="col-5 p-3 bk-point position-relative">
                 <img class="z-n1 w-100 ruota" :src="getImg('circle-auto-car-1.png')" alt="">
                 <img class="position-absolute top-0 end-0" style="width: 100%;" :src="getImg('aoutcar-about-1.png')"
                     alt="">
@@ -53,7 +53,7 @@ export default {
 
             </div>
 
-            <div class="col-4 px-4 py-3">
+            <div class="col-5 px-4 py-3">
 
                 <h3 class="fw-bolder">Want to buy or sell a vehicle?</h3>
                 <p class="ps-5">You can put your vahicles for sale by registering in our website. Whether you are a
