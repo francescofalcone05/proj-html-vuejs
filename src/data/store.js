@@ -9,6 +9,7 @@ const iMieiDati = reactive({
             prezzo: '34.000',
             carburante: 'Electric',
             immagine: 'bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'BMW',
@@ -17,6 +18,7 @@ const iMieiDati = reactive({
             prezzo: '34.000',
             carburante: 'Diesel',
             immagine: 'bmw88-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'BMW',
@@ -25,6 +27,7 @@ const iMieiDati = reactive({
             prezzo: '34.000',
             carburante: 'Gasoline',
             immagine: 'bmw442-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'Seat',
@@ -33,6 +36,7 @@ const iMieiDati = reactive({
             prezzo: '27.000',
             carburante: 'Electric',
             immagine: 'yeni-ibiza-2-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'Seat',
@@ -41,6 +45,7 @@ const iMieiDati = reactive({
             prezzo: '60.000',
             carburante: 'Gasoline',
             immagine: 'makyajli-2022-seat-arona-1-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'Volswagen',
@@ -49,6 +54,7 @@ const iMieiDati = reactive({
             prezzo: '68.000',
             carburante: 'Electric',
             immagine: 'vw-taigo3832-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'Volswagen',
@@ -57,6 +63,7 @@ const iMieiDati = reactive({
             prezzo: '47.000',
             carburante: 'Diesel',
             immagine: '2019-vw-t-cross-400x300.jpg',
+            heart: false,
         },
         {
             marchio: 'Volswagen',
@@ -65,6 +72,7 @@ const iMieiDati = reactive({
             prezzo: '32.000',
             carburante: 'Diesel',
             immagine: 'volkswagen-passat-1280x720-1-400x300.jpg',
+            heart: false,
         },
     ]
 

@@ -10,7 +10,6 @@ export default {
     data() {
         return {
             store,
-            colorHeart: 'lGrey'
 
         }
     },
@@ -20,11 +19,11 @@ export default {
             return risultato.href;
         },
 
-        addFav() {
-            if (this.colorHeart == lGray) {
-                this.colorHeart = lRed
+        addFav(index) {
+            if (this.store.cardLists[index].heart == false) {
+                this.store.cardLists[index].heart = true
             } else {
-                this.colorHeart == lRed
+                this.store.cardLists[index].heart = false
             }
 
         }
@@ -58,10 +57,16 @@ export default {
                         <span><i class="mx-1 fa-solid fa-car"></i> {{ car.marchio }}</span>
                         <span><i class="mx-1 fa-solid fa-gas-pump"></i> {{ car.carburante }}</span>
                     </p>
-                    <span @click="addFav()" class="pb-1 position-absolute bottom-0 start-0" :class="colorHeart"><i
-                            class="fa-solid fa-heart"></i></span>
+                    <span @click="addFav(i)" class="pb-1 position-absolute bottom-0 start-0"
+                        :class="(car.heart == false) ? 'lGrey' : 'lRed'"><i class="fa-solid fa-heart"></i></span>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-2 p-3 bg-dark text-light text-center">
+                Show All Cars <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         </div>
 
