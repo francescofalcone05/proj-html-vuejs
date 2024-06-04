@@ -14,7 +14,7 @@ export default {
         }
     },
     methods: {
-        getFlegImg(path) {
+        getImg(path) {
             let risultato = new URL(`../assets/Img/${path}`, import.meta.url);
             return risultato.href;
         },
@@ -39,8 +39,8 @@ export default {
         <div class="row justify-content-center">
 
             <div class="col-4 p-3 bk-point position-relative">
-                <img class="z-n1 w-100 ruota" :src="getFlegImg('circle-auto-car-1.png')" alt="">
-                <img class="position-absolute top-0 end-0" style="width: 100%;" :src="getFlegImg('aoutcar-about-1.png')"
+                <img class="z-n1 w-100 ruota" :src="getImg('circle-auto-car-1.png')" alt="">
+                <img class="position-absolute top-0 end-0" style="width: 100%;" :src="getImg('aoutcar-about-1.png')"
                     alt="">
                 <div class="twoForTwo position-absolute bg-dark leftCircle text-center p-2">
                     <h4 class="fw-bolder">24</h4>
@@ -61,11 +61,11 @@ export default {
                     personally. Sell yuor vehicle in the most profitable way. With this system. Whichj has millions of
                     members. You will be able to buy and sell veichles quickly.
                 </p>
-                <img class="mb-2" :src="getFlegImg('divider.jpg')" alt="">
+                <img class="mb-2" :src="getImg('divider.jpg')" alt="">
 
                 <div class="d-flex">
                     <div class="align-content-center">
-                        <img :src="getFlegImg('Screenshot1.png')" alt="">
+                        <img :src="getImg('Screenshot1.png')" alt="">
                     </div>
                     <div class="pe-2 ps-5">
                         <h4 class="fw-bolder">Model Vehicles</h4>
@@ -75,7 +75,7 @@ export default {
 
                 <div class="d-flex">
                     <div class="align-content-center">
-                        <img :src="getFlegImg('Screenshot2.png')" alt="">
+                        <img :src="getImg('Screenshot2.png')" alt="">
                     </div>
                     <div class="pe-2 ps-5">
                         <h4 class="fw-bolder">2nd Hand Vehicles</h4>

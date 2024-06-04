@@ -14,7 +14,7 @@ export default {
         }
     },
     methods: {
-        getFlegImg(path) {
+        getImg(path) {
             let risultato = new URL(`../assets/Img/${path}`, import.meta.url);
             return risultato.href;
         },
@@ -49,7 +49,7 @@ export default {
 
             <div v-for="car, i in store.cardLists" class="b_shad border col-3 p-4 my-2">
 
-                <div><img style="width: 100%;" :src="getFlegImg(car.immagine)" alt=""></div>
+                <div><img style="width: 100%;" :src="getImg(car.immagine)" alt=""></div>
                 <div class="position-relative">
                     <p class="py-1">{{ car.modello }} <span><i class="fa-solid fa-circle-check"></i></span></p>
                     <p class="py-1">{{ car.tipo }}</p>
