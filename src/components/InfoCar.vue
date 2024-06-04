@@ -97,19 +97,6 @@ export default {
 </template>
 
 <style scoped>
-/* .bk-point {
-    background-image: url(../assets/Img/circle-auto-car-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    animation: rotate 2s linear infinite;
-} */
-/* @keyframes rotate {
-    0% {
-      transform: rotate(1turn);
-    }
-} */
-
 .ruota {
     animation: rotate 10s linear infinite;
 }
