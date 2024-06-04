@@ -1,3 +1,9 @@
+:root {
+  --site-white: #ffffff;
+  --black: #000000;
+  --grey: #AAAAAA
+}
+
 body {
 
   font-family: sans-serif;

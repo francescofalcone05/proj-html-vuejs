@@ -34,11 +34,11 @@ export default {
 
 <template>
 
-    <div class="bg-light w-75 mx-auto py-2">
+    <div class="w-75 mx-auto py-2">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
 
-            <div class="col-5 p-3 bk-point position-relative">
+            <div class="col-5 p-3 bk-point position-relative overflow-hidden">
                 <img class="z-n1 w-100 ruota" :src="getImg('circle-auto-car-1.png')" alt="">
                 <img class="position-absolute top-0 end-0" style="width: 100%;" :src="getImg('aoutcar-about-1.png')"
                     alt="">

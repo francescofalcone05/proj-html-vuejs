@@ -54,10 +54,10 @@ export default {
                     <p class="py-1">{{ car.modello }} <span><i class="fa-solid fa-circle-check"></i></span></p>
                     <p class="py-1">{{ car.tipo }}</p>
                     <p class="py-1">
-                        <span class="ms-2"><i class="my_me fa-sharp fa-solid fa-dollar-sign"></i> {{ car.prezzo
+                        <span class="ms-2 my_fs"><i class="my_me fa-sharp fa-solid fa-dollar-sign"></i> {{ car.prezzo
                             }}</span>
-                        <span><i class="mx-1 fa-solid fa-car"></i> {{ car.marchio }}</span>
-                        <span><i class="mx-1 fa-solid fa-gas-pump"></i> {{ car.carburante }}</span>
+                        <span class="my_fs"><i class="mx-1 fa-solid fa-car"></i> {{ car.marchio }}</span>
+                        <span class="my_fs"><i class="mx-1 fa-solid fa-gas-pump"></i> {{ car.carburante }}</span>
                     </p>
                     <span @click="addFav(i)" class="pb-1 position-absolute bottom-0 start-0"
                         :class="(car.heart == false) ? 'lGrey' : 'lRed'"><i
@@ -95,5 +95,9 @@ export default {
 
 .color_hov:hover {
     color: rgb(231, 117, 117);
+}
+
+.my_fs {
+    font-size: 0.7rem;
 }
 </style>
