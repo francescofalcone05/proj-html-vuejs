@@ -41,7 +41,7 @@ const iMieiDati = reactive({
         {
             marchio: 'Seat',
             modello: 'Seat Arona',
-            tipo: 'Suv',
+            tipo: 'SUV',
             prezzo: '60.000',
             carburante: 'Gasoline',
             immagine: 'makyajli-2022-seat-arona-1-400x300.jpg',
