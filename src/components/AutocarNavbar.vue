@@ -45,7 +45,7 @@ export default {
                 </div>
 
                 <!-- Offcanvas trigger-->
-                <button id="offcanvasTrigger" data-bs-toggle="offcanvas" data-bs-target="offcanvas"
+                <button id="offcanvasTrigger" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
                     aria-controls="offcanvasExample">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
@@ -53,22 +53,22 @@ export default {
                 <div id="offcanvas" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="offcanvasLabel">
                     <div id="offcanvasContent">
                         <img id="offcanvasLabel" :src="getImg(store.navbarLogo)" alt="">
-                        <H1>Contact Information</H1>
+                        <h1>Contact Information</h1>
                         <div class="offcanvasDetail">
-                            <i class="fa-solid fa-phone-volume"></i>
+                            <i class="fa-solid fa-phone-volume"></i><br>
                             <span>{{ store.footerData.autocarInfo.acPhone.text }}</span>
                         </div>
                         <div class="offcanvasDetail">
-                            <i class="fa-regular fa-envelope"></i>
+                            <i class="fa-regular fa-envelope"></i><br>
                             <span>{{ store.footerData.autocarInfo.acEmail.text }}</span>
                         </div>
                         <div class="offcanvasDetail">
-                            <i class="fa-solid fa-map-location-dot"></i>
+                            <i class="fa-solid fa-map-location-dot"></i><br>
                             <span>{{ store.footerData.autocarInfo.acLocation.text }}</span>
                         </div>
                         <div id="offCanSocials">
                             <a v-for="social in store.footerData.acSocials" :href="social.link">
-                                <i :class="social.icon"></i>
+                                <i class="mx-1" :class="social.icon"></i>
                             </a>
                         </div>
                     </div>
@@ -154,11 +154,14 @@ li {
 #offcanvas i {
     position: relative;
     bottom: 5%;
+    margin-top: 1rem;
+
 }
 
 #offcanvasContent {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .offcanvasdetail {

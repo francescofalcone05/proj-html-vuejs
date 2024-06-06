@@ -17,18 +17,21 @@ Utilizziamo uno store.js per immagazzinare i vari dati.
 
 Tutte le immagini le abbiamo messe nella cartella src/assets, creiamo le cartelle Icone e Img
 
+
+/**************************************************************************/
+
 SPIEGAZIONE
 -Creo tutta la struttura dell'app importando i vari componenti.vue e lo store.js; creo le cartelle Icone ed Img in asset con il materiale da utilizzare per lo sviluppo.
 
 -CardAuto.vue : 
 1. creo il container boxato con w-75
-2. creo la row con dentro una col-3 che con un ciclo v-for faccio ciclare nell'array CardList(store.js), stampandomi ad ogni giro gli elementi necessari alla card
+2. creo la row con dentro una colonna che con un ciclo v-for faccio ciclare nell'array CardList(store.js), stampandomi ad ogni giro gli elementi necessari alla card
 3. mentre le img le recupero attraverso il metodo getImg()
-4. infine una col-2 centrata che funge da bottone.
+4. infine una colonna centrata che funge da bottone.
 
 -InfoCar.vue : 
 1. creo il container boxato con w-75
-2. creo la row con 2 col-4 centrate 
-3. la col di sinistra contiene la prima img roteante, con z-index in modo da stare come background; successivamente la seconda img della macchina(in absolute-p), con due box arrotondati e posti nella posizione corretta con absolut-p.
+2. creo la row con 2 colonna centrate 
+3. la col di sinistra contiene la prima img roteante, con z-index in modo da stare come background; successivamente la seconda img della macchina(in absolute-p), con due box arrotondati e posti nella posizione corretta con absolut-p e con due contatori che partono nel momento in cui l'oggetto e` visibile nella viewport.
 4. mentre la col di destra contiene del testo e qualche img , affiancate al testo con d-flex .
 5. infine una col-6 che funge da bottone.
