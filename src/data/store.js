@@ -75,6 +75,8 @@ const iMieiDati = reactive({
             heart: false,
         },
     ],
+
+    // DAVIDE
     customer: {
         title: "What Are Our Customer Saying ?",
         subtitle: "Opinion from our Happy Customers.",
@@ -161,6 +163,8 @@ const iMieiDati = reactive({
             },
         ],
     },
+
+    //LUCA
     CaroselloTitolo: 'Buy And Sell Your Car At Its Value',
     CaroselloSottotitolo: 'Find the right price and dealer.',
     Carosello: [
@@ -247,6 +251,102 @@ const iMieiDati = reactive({
         },
     ],
 
+    navbarLogo: `logo-autocar11.png`,
+    footerLogo: `logo-footer-autocar11.png`,
+
+    headerData: {
+        navbarLinks: [
+            { text: `Home`, link: `https://example.com` },
+            { text: `About Us`, link: `https://example.com` },
+            { text: `Vehicles`, link: `https://example.com` },
+            { text: `Dealers`, link: `https://example.com` },
+            { text: `Packages`, link: `https://example.com` },
+            { text: `Blog`, link: `https://example.com` },
+            { text: `Contact`, link: `https://example.com` }
+        ]
+    },
+
+
+    footerData: {
+        acSocials: {
+            facebook: {
+                icon: `fa-brands fa-facebook-f`,
+                link: `https://example.com`
+            },
+            instagram: {
+                icon: `fa-brands fa-instagram`,
+                link: `https://example.com`
+            },
+            twitter: {
+                icon: `fa-brands fa-twitter`,
+                link: `https://example.com`
+            }
+        },
+        //Ogni sezione del footer ha i suoi dati
+        autocarInfo:
+        {
+            acLocation: {
+                text: `New Jersey, USA`,
+                icon: `fa-solid fa-location-dot`
+            },
+            acEmail: {
+                text: `example@example.com`,
+                icon: `fa-regular fa-envelope`
+            },
+            acPhone: {
+                text: `+1 (234) 567 89 10`,
+                icon: `fa-solid fa-phone`
+            }
+        },
+        autocarAccount:
+        {
+            myAccount: {
+                name: `My Account`,
+                link: `https://example.com`
+            },
+            checkout: {
+                name: `Checkout`,
+                link: `https://example.com`
+            },
+            cart: {
+                name: `Cart`,
+                link: `https://example.com`
+            },
+            packages: {
+                name: `Packages`,
+                link: `https://example.com`
+            },
+            addCar: {
+                name: `Add Car`,
+                link: `https://example.com`
+            }
+        },
+        autocarQuickLinks:
+        {
+            home: {
+                name: `Home`,
+                link: `https://example.com`
+            },
+            aboutUs: {
+                name: `About us`,
+                link: `https://example.com`
+            },
+            blog: {
+                name: `Blog`,
+                link: `https://example.com`
+            },
+            contact: {
+                name: `Contact`,
+                link: `https://example.com`
+            },
+            refundAndReturn: {
+                name: `Refund & Returns`,
+                link: `https://example.com`
+            }
+        },
+        pageCredits: "2022 Autocar - All Rigthts Reserved"
+    }
 });
+
 
 export default iMieiDati

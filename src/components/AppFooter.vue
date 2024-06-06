@@ -1,11 +1,11 @@
 <script>
 import store from '../data/store.js';
-
+import AutocarFooter from './AutocarFooter.vue'
 
 
 export default {
     components: {
-
+        AutocarFooter
 
     },
 
@@ -32,6 +32,8 @@ export default {
 </script>
 
 <template>
+
+    <AutocarFooter />
 
 </template>
 

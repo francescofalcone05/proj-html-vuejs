@@ -1,5 +1,6 @@
 <script>
 import Store from "../data/store.js";
+//data in piccolo
 export default {
 	name: "Customer",
 	data() {

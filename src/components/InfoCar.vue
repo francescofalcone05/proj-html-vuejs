@@ -23,7 +23,6 @@ export default {
             return risultato.href;
         },
 
-
         getNumbers(min, max, nomeDelData, ms) {
             this[nomeDelData] = min
             let nomeDelTimer = nomeDelData + 'Timer'
