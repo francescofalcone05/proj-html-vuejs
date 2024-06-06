@@ -25,13 +25,36 @@ SPIEGAZIONE
 
 -CardAuto.vue : 
 1. creo il container boxato con w-75
-2. creo la row con dentro una colonna che con un ciclo v-for faccio ciclare nell'array CardList(store.js), stampandomi ad ogni giro gli elementi necessari alla card
-3. mentre le img le recupero attraverso il metodo getImg()
-4. infine una colonna centrata che funge da bottone.
+2. creo la row con dentro una colonna che con un ciclo v-for faccio ciclare nell'array CardList(in store.js), stampandomi ad ogni giro gli elementi necessari alla card
 
 -InfoCar.vue : 
 1. creo il container boxato con w-75
-2. creo la row con 2 colonna centrate 
-3. la col di sinistra contiene la prima img roteante, con z-index in modo da stare come background; successivamente la seconda img della macchina(in absolute-p), con due box arrotondati e posti nella posizione corretta con absolut-p e con due contatori che partono nel momento in cui l'oggetto e` visibile nella viewport.
-4. mentre la col di destra contiene del testo e qualche img , affiancate al testo con d-flex .
-5. infine una col-6 che funge da bottone.
+2. creo la row con 2 colonn2 centrate 
+3. la col di sinistra contiene la prima img roteante, con z-index negativo in modo da stare come background; successivamente la seconda img della macchina(in absolute-p), con due box arrotondati e posti nella posizione corretta con absolut-p con dentro due contatori che partono nel momento in cui l'oggetto e` visibile nella viewport.
+4. mentre la col di destra contiene del testo e qualche img affiancate al testo con d-flex .
+
+Sviluppatori: Dihep, Francesco, Luca, Davide
+
+Framework e librerie utilizzate: Vue.js, Vite, Bootstrap, FontAwesome
+
+Struttura dati: -Data: Store.js (contiene tutti i dati necessari per il funzionamento dei componenti (array, oggetti, variabili) visibili a tutti i componenti) -Immagini: contenute tutte in /assets/img o icone
+
+Struttura componenti: -PageHeader .....AutocarNavbar ( Developed by: Dihep)
+
+-PageMain .....Carosello ( Developed by: Luca) .....SearchCar ( Developed by: Luca) .....CardAuto ( Developed by: Francesco) .....InfoCar ( Developed by: Francesco) .....Customer ( Developed by: Davide) .....Recent ( Developed by: Davide)
+
+-PageFooter .....AutocarFooter ( Developed by: Dihep)
+
+Spiegazione funzionalità dei componenti: AutocarNavbar: Carosello:
+
+SearchCar:
+
+CardAuto:
+
+InfoCar:
+
+Customer:
+
+Recent:
+
+AutocarFooter:
