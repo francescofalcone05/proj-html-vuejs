@@ -34,6 +34,11 @@ export default {
         store.number++
       }
 
+    },
+
+    getImg(path) {
+      let risultato = new URL(`../assets/Img/${path}`, import.meta.url);
+      return risultato.href;
     }
   }
 }
@@ -46,7 +51,7 @@ export default {
     <div id="caroselloHeight" class="position-relative">
       <div v-for="(immagine, i) in store.Carosello" :key="i" id="backgroundImage">
         <img class="imgBack" :class="{ 'opacity-100': caroselloImg === i, 'opacity-0': caroselloImg !== i }" alt=""
-          :src="immagine.firstImage">
+          :src="getImg(immagine.firstImage)">
       </div>
 
 
