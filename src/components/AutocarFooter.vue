@@ -82,7 +82,7 @@ export default {
 #footerWrapper {
     background-color: black;
     color: white;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
 }
 
 #footerContent {

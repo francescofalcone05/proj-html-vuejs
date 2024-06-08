@@ -55,22 +55,26 @@ export default {
                         <img id="offcanvasLabel" :src="getImg(store.navbarLogo)" alt="">
                         <h1>Contact Information</h1>
                         <div class="offcanvasDetail">
-                            <i class="fa-solid fa-phone-volume"></i><br>
+                            <i class="fa-solid fa-phone-volume"></i>
                             <span>{{ store.footerData.autocarInfo.acPhone.text }}</span>
                         </div>
                         <div class="offcanvasDetail">
-                            <i class="fa-regular fa-envelope"></i><br>
+                            <i class="fa-regular fa-envelope"></i>
                             <span>{{ store.footerData.autocarInfo.acEmail.text }}</span>
                         </div>
                         <div class="offcanvasDetail">
-                            <i class="fa-solid fa-map-location-dot"></i><br>
+                            <i class="fa-solid fa-map-location-dot"></i>
                             <span>{{ store.footerData.autocarInfo.acLocation.text }}</span>
                         </div>
                         <div id="offCanSocials">
                             <a v-for="social in store.footerData.acSocials" :href="social.link">
-                                <i class="mx-1" :class="social.icon"></i>
+                                <i :class="social.icon"></i>
                             </a>
                         </div>
+                        <p id="offcanvasCredits">
+                            <i class="fa-regular fa-copyright"></i>
+                            {{ store.footerData.pageCredits }}
+                        </p>
                     </div>
                 </div>
 
@@ -103,7 +107,7 @@ a {
 }
 
 #navLogo {
-    width: 15%;
+    width: 12%;
 }
 
 #navLogo img {
@@ -138,7 +142,7 @@ ul {
 li {
     display: inline-block;
     margin: 0 0.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: black;
 }
 
@@ -149,24 +153,76 @@ li {
     font-size: 2rem;
     padding: 0 0.6rem;
     border: none;
+    background-color: white;
+    box-shadow: none;
 }
 
-#offcanvas i {
+#offcanvasTrigger i {
     position: relative;
     bottom: 5%;
-    margin-top: 1rem;
-
 }
 
 #offcanvasContent {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    color: black;
+    align-content: center;
+}
+
+#offcanvasContent h1 {
+    font-weight: 600;
+    padding: 0 1rem;
+    font-size: 2.2rem;
     text-align: center;
 }
 
-.offcanvasdetail {
+#offcanvasContent img {
+    width: 75%;
+    margin: 0.5rem auto 0;
+}
+
+.offcanvasDetail {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.offcanvasDetail i {
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+
+#offCanSocials {
+    display: flex;
+    justify-content: center;
+}
+
+#offCanSocials a {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    margin: 0 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#offCanSocials i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#offcanvasCredits {
+    text-align: center;
+    font-size: 0.8rem;
 }
 </style>
