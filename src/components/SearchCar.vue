@@ -18,17 +18,17 @@ export default {
 
 <template>
   <!-- Ricerca Auto -->
-  <div class="w-75 m-auto d-flex mt-5 mb-3">
+  <div class="w-75 m-auto d-flex mt-5 mb-3 justify-content-between">
     <div class="widthInput">
-      <input class="text-center p-3 border" type="text" placeholder="Keywords">
+      <input class="text-center p-3 border my_fs" type="text" placeholder="Keywords">
     </div>
 
     <div class="widthInput">
-      <input class="text-center p-3 border" type="text" placeholder="Location">
+      <input class="text-center p-3 border my_fs" type="text" placeholder="Location">
     </div>
 
     <div class="widthInput">
-      <select class="form-select p-3" aria-label="Default select example">
+      <select class="form-select p-3 my_fs" aria-label="Default select example">
         <option selected class="text-center d-flex">All categories</option>
         <option class="d-flex" v-for="category in store.SearchCar.AllCategories" value="i">{{ category }}
         </option>
@@ -36,21 +36,21 @@ export default {
     </div>
 
     <div class="widthInput">
-      <select class="form-select p-3" aria-label="Default select example">
+      <select class="form-select p-3 my_fs" aria-label="Default select example">
         <option selected class="text-center">Brand</option>
         <option class="d-flex" v-for="brand in store.SearchCar.Brand" value="i">{{ brand }}</option>
       </select>
     </div>
 
     <div class="widthInput">
-      <select class="form-select p-3" aria-label="Default select example">
+      <select class="form-select p-3 my_fs" aria-label="Default select example">
         <option selected class="text-center">Fuel Type</option>
         <option class="d-flex" v-for="fuel in store.SearchCar.FuelType" value="i">{{ fuel }}</option>
       </select>
     </div>
 
     <div class="widthInput">
-      <select class="form-select p-3" aria-label="Default select example">
+      <select class="form-select p-3 my_fs" aria-label="Default select example">
         <option selected class="text-center">Transmission</option>
         <option class="d-flex" v-for="transmission in store.SearchCar.Transmission" value="i">{{ transmission }}
         </option>
@@ -58,14 +58,14 @@ export default {
     </div>
 
     <div class="widthInput">
-      <select class="form-select p-3" aria-label="Default select example">
+      <select class="form-select p-3 my_fs" aria-label="Default select example">
         <option selected class="text-center">Status</option>
         <option class="custom-option" v-for="status in store.SearchCar.Status" value="i">{{ status }}</option>
       </select>
     </div>
 
     <div class="widthInput">
-      <button type="button" class="btn btn-dark p-3">Search</button>
+      <button type="button" class="my_fs btn btn-dark p-3">Search</button>
     </div>
 
   </div>
@@ -91,8 +91,8 @@ export default {
 }
 
 .widthInput {
-  width: 12.5%;
-  margin-right: 1rem;
+  width: calc(12.5% - 0.8rem);
+
 }
 
 .widthInput * {
@@ -126,5 +126,9 @@ export default {
 .bordoModel {
   /* border: 1px solid rgba(158, 157, 157, 0.014); */
   box-shadow: 0 0rem 0.1rem rgba(0, 0, 0, 0.329) !important;
+}
+
+.my_fs {
+  font-size: 0.8rem;
 }
 </style>
